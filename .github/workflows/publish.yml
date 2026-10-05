@@ -4,7 +4,7 @@
 # Builds and pushes to GitHub Container Registry so a self-hoster can run the
 # app without cloning or building anything:
 #
-#   podman pull ghcr.io/sarel-myburgh/bokydojo:latest
+#   podman pull ghcr.io/bokyapps/bokydojo:latest
 #
 # ⚠ Runs only after CI passes on main. Publishing an image whose tests never ran
 # is how ":latest" stops meaning anything.
@@ -25,7 +25,7 @@ env:
   REGISTRY: ghcr.io
   # ⚠ Must be lower-case. The repository is "BokyDojo"; ghcr rejects capitals
   # in an image name, so this cannot be github.repository verbatim.
-  IMAGE_NAME: sarel-myburgh/bokydojo
+  IMAGE_NAME: bokyapps/bokydojo
 
 jobs:
   publish:

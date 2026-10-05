@@ -10,7 +10,7 @@
 #   podman-compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 # =============================================================================
 
-x-image: &image ghcr.io/sarel-myburgh/bokydojo:${BOKYDOJO_TAG:-latest}
+x-image: &image ghcr.io/bokyapps/bokydojo:${BOKYDOJO_TAG:-latest}
 
 services:
   web:
