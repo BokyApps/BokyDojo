@@ -80,9 +80,9 @@ cloned or built:
 
 ```sh
 # 1. Fetch the two files that describe the stack
-curl -fsSLO https://raw.githubusercontent.com/sarel-myburgh/BokyDojo/main/docker-compose.yml
-curl -fsSLO https://raw.githubusercontent.com/sarel-myburgh/BokyDojo/main/Caddyfile
-curl -fsSLO https://raw.githubusercontent.com/sarel-myburgh/BokyDojo/main/scripts/init-env.sh
+curl -fsSLO https://raw.githubusercontent.com/BokyApps/BokyDojo/main/docker-compose.yml
+curl -fsSLO https://raw.githubusercontent.com/BokyApps/BokyDojo/main/Caddyfile
+curl -fsSLO https://raw.githubusercontent.com/BokyApps/BokyDojo/main/scripts/init-env.sh
 chmod +x init-env.sh
 
 # 2. Generate real secrets (it refuses to overwrite an existing .env)
@@ -99,7 +99,7 @@ your browser will warn once.
 To pull the image on its own:
 
 ```sh
-podman pull ghcr.io/sarel-myburgh/bokydojo:latest
+podman pull ghcr.io/bokyapps/bokydojo:latest
 ```
 
 Tags: `latest` tracks `main`, `sha-<commit>` pins an exact build, and `vX.Y.Z`

@@ -3,7 +3,7 @@
 # TODO 0.2.1 — build deps separated, non-root runtime user
 #
 # Built and published by .github/workflows/publish.yml to
-#   ghcr.io/sarel-myburgh/bokydojo
+#   ghcr.io/bokyapps/bokydojo
 # for linux/amd64 and linux/arm64, so it runs under Docker or Podman on an
 # ordinary server and on an Apple-silicon laptop without rebuilding.
 # =============================================================================
@@ -28,7 +28,7 @@ FROM python:3.13-slim AS runtime
 # ⚠ OCI labels, not decoration: ghcr.io links the package to this repository
 # through org.opencontainers.image.source, which is also what makes the package
 # inherit the repository's visibility settings.
-LABEL org.opencontainers.image.source="https://github.com/sarel-myburgh/BokyDojo" \
+LABEL org.opencontainers.image.source="https://github.com/BokyApps/BokyDojo" \
       org.opencontainers.image.description="Student information system for martial arts organisations" \
       org.opencontainers.image.licenses="AGPL-3.0-or-later"
 
